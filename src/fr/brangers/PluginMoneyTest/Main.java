@@ -25,7 +25,7 @@ public class Main extends JavaPlugin {
 	public SqlConnection sql;
 	@Override
 	public void onEnable() {
-		sql = new SqlConnection("jdbc:mysql://", "localhost", "minecraft", "brangers", "pokemon");
+		sql = new SqlConnection("jdbc:mysql://", "localhost", "minecraft", "player_Name", "password");
 		sql.connection();
 		Bukkit.getConsoleSender().sendMessage("Initialisation du Plugin Money");
 		command.CommandList();
